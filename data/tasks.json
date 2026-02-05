@@ -1,108 +1,166 @@
-{
-  "tasks": [
-    {
-      "id": "guide_onboarding",
-      "title": "🚀 Onboarding Guide — Set Up Mission Control",
-      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "permanent",
-      "project": "guides",
-      "tags": ["guide", "setup"],
-      "subtasks": [
-        { "id": "sub_001", "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save", "done": false },
-        { "id": "sub_002", "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo", "done": false },
-        { "id": "sub_003", "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token", "done": false },
-        { "id": "sub_004", "title": "4. Install Tailscale: brew install tailscale && tailscale up", "done": false },
-        { "id": "sub_005", "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL", "done": false },
-        { "id": "sub_006", "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it", "done": false },
-        { "id": "sub_007", "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN", "done": false },
-        { "id": "sub_008", "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification", "done": false }
-      ],
-      "priority": "high",
-      "comments": [
-        {
-          "author": "Mission Control",
-          "text": "Once all steps are complete, you can archive this guide or keep it as reference. Your setup is done when MoltBot responds to task changes!",
-          "timestamp": "2026-01-01T00:00:00Z"
-        }
-      ],
-      "createdAt": "2026-01-01T00:00:00Z"
-    },
-    {
-      "id": "guide_user",
-      "title": "📖 User Guide — How to Use Mission Control",
-      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
-      "status": "permanent",
-      "project": "guides",
-      "tags": ["guide", "help"],
-      "subtasks": [
-        { "id": "sub_001", "title": "— THE BOARD —", "done": false },
-        { "id": "sub_002", "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done", "done": false },
-        { "id": "sub_003", "title": "Drag & Drop: Move tasks between columns to change status", "done": false },
-        { "id": "sub_004", "title": "Click task card to open details and edit", "done": false },
-        { "id": "sub_005", "title": "— CREATING TASKS —", "done": false },
-        { "id": "sub_006", "title": "👤 You: Click '+' button in any column header", "done": false },
-        { "id": "sub_007", "title": "🤖 MoltBot: Edits data/tasks.json or uses CLI", "done": false },
-        { "id": "sub_008", "title": "— TASK DETAILS —", "done": false },
-        { "id": "sub_009", "title": "Title: Short, clear name for the task", "done": false },
-        { "id": "sub_010", "title": "Description: Detailed instructions (Markdown supported)", "done": false },
-        { "id": "sub_011", "title": "Subtasks: Break work into smaller steps (checkable)", "done": false },
-        { "id": "sub_012", "title": "Comments: Add notes, feedback, or progress updates", "done": false },
-        { "id": "sub_013", "title": "Priority: High (🔴) / Medium (🟡) / Low (🟢)", "done": false },
-        { "id": "sub_014", "title": "Project: Organize tasks by project/category", "done": false },
-        { "id": "sub_015", "title": "— WORKFLOW WITH MOLTBOT —", "done": false },
-        { "id": "sub_016", "title": "1. Create task in Backlog with clear description", "done": false },
-        { "id": "sub_017", "title": "2. Move to 'In Progress' → MoltBot gets notified via webhook", "done": false },
-        { "id": "sub_018", "title": "3. MoltBot works on task, updates subtasks & adds comments", "done": false },
-        { "id": "sub_019", "title": "4. MoltBot moves to 'Review' when done", "done": false },
-        { "id": "sub_020", "title": "5. You review: Approve → Done, or add feedback → back to In Progress", "done": false },
-        { "id": "sub_021", "title": "— DASHBOARD FEATURES —", "done": false },
-        { "id": "sub_022", "title": "🔍 Search: Filter tasks by text", "done": false },
-        { "id": "sub_023", "title": "📁 Project filter: Click project buttons to filter", "done": false },
-        { "id": "sub_024", "title": "⚙️ Settings: Add/edit projects", "done": false },
-        { "id": "sub_025", "title": "📦 Archive: Store completed tasks out of sight", "done": false },
-        { "id": "sub_026", "title": "👥 Team: See repo collaborators (if public)", "done": false },
-        { "id": "sub_027", "title": "📚 Docs: Built-in documentation", "done": false },
-        { "id": "sub_028", "title": "— MOLTBOT CAPABILITIES —", "done": false },
-        { "id": "sub_029", "title": "🤖 Can CREATE tasks (via CLI or JSON)", "done": false },
-        { "id": "sub_030", "title": "🤖 Can UPDATE task status, subtasks, comments", "done": false },
-        { "id": "sub_031", "title": "🤖 Can MOVE tasks between columns", "done": false },
-        { "id": "sub_032", "title": "🤖 Can DELETE/archive tasks", "done": false },
-        { "id": "sub_033", "title": "🤖 Receives WEBHOOK when you move tasks to In Progress", "done": false }
-      ],
-      "priority": "medium",
-      "comments": [
-        {
-          "author": "Mission Control",
-          "text": "This guide stays in Permanent so you can always reference it. The subtasks aren't meant to be 'completed' — they're documentation!",
-          "timestamp": "2026-01-01T00:00:00Z"
-        }
-      ],
-      "createdAt": "2026-01-01T00:00:01Z"
-    },
-    {
-      "id": "task_example",
-      "title": "Example Task — Delete me when ready!",
-      "description": "This is an example of what a real task looks like. Feel free to edit or delete it.\n\n**Good task descriptions include:**\n- What needs to be done\n- Why it matters\n- Any constraints or requirements\n- Links to relevant resources",
-      "status": "backlog",
-      "project": "default",
-      "tags": ["example"],
-      "subtasks": [
-        { "id": "sub_001", "title": "First step of the task", "done": false },
-        { "id": "sub_002", "title": "Second step", "done": false },
-        { "id": "sub_003", "title": "Final step", "done": false }
-      ],
-      "priority": "low",
-      "comments": [],
-      "createdAt": "2026-01-01T00:00:02Z"
-    }
-  ],
-  "projects": [
-    { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
-    { "id": "default", "name": "My Project", "color": "#3b82f6", "icon": "📁" }
-  ],
-  "activities": [
-    { "type": "created", "actor": "Mission Control", "task": "Onboarding Guide", "time": "just now" },
-    { "type": "created", "actor": "Mission Control", "task": "User Guide", "time": "just now" }
-  ],
-  "lastUpdated": "2026-01-01T00:00:00Z"
-}
+[
+  {
+    "id": "task_001",
+    "title": "GitHub Copilot CLI Installation",
+    "description": "Install GitHub Copilot CLI for AI-assisted coding in terminal",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-04T20:44:00-05:00",
+    "completedAt": "2026-02-05T21:11:00-05:00",
+    "tags": ["development", "tools"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Install GitHub CLI", "done": true},
+      {"id": "sub_002", "title": "Authenticate with GitHub token", "done": true},
+      {"id": "sub_003", "title": "Install Copilot extension", "done": true}
+    ],
+    "dod": "gh copilot command working and ready to use",
+    "comments": [
+      {"author": "Atlas", "text": "GitHub CLI installed successfully", "timestamp": "2026-02-04T20:46:00-05:00"},
+      {"author": "Atlas", "text": "Authenticated with classic token (workflow scope)", "timestamp": "2026-02-04T21:10:00-05:00"},
+      {"author": "Atlas", "text": "✅ Copilot available via gh copilot command", "timestamp": "2026-02-04T21:11:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_002",
+    "title": "Mission Control Dashboard - Build & Deploy",
+    "description": "Build Mission Control dashboard exactly like YouTube video (https://www.youtube.com/watch?v=UpM2H83MJC8&t=549s). Kanban task board for AI workflow management.",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-04T20:44:00-05:00",
+    "completedAt": "2026-02-05T21:11:00-05:00",
+    "tags": ["dashboard", "mission-control", "kanban"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Copy dashboard files to workspace", "done": true},
+      {"id": "sub_002", "title": "Set up git repository", "done": true},
+      {"id": "sub_003", "title": "Create GitHub repo", "done": true},
+      {"id": "sub_004", "title": "Configure GitHub token with workflow scope", "done": true},
+      {"id": "sub_005", "title": "Push to GitHub", "done": true},
+      {"id": "sub_006", "title": "Enable GitHub Pages", "done": true},
+      {"id": "sub_007", "title": "Populate with actual tasks", "done": false}
+    ],
+    "dod": "Dashboard live at https://ismaelsoto120.github.io/mission-control-dashboard/ with real task data",
+    "comments": [
+      {"author": "Atlas", "text": "Dashboard files copied from mission-control skill", "timestamp": "2026-02-04T20:53:00-05:00"},
+      {"author": "Atlas", "text": "Hit token permission issues - needed workflow scope", "timestamp": "2026-02-04T21:09:00-05:00"},
+      {"author": "Atlas", "text": "✅ Dashboard deployed and live!", "timestamp": "2026-02-04T21:11:00-05:00"},
+      {"author": "Ismael", "text": "Populate with my pending tasks and activity", "timestamp": "2026-02-04T21:13:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_003",
+    "title": "5 Telegram Personas Setup",
+    "description": "Create 5 separate Telegram bot personas: Atlas_Core (architecture), HVAC_GM_Bot (operations), MarketSignal_AI (markets), Sovereign_Assistant (personal), Digital_Architect_AI (digital products)",
+    "status": "review",
+    "priority": "high",
+    "createdAt": "2026-02-04T16:28:00-05:00",
+    "tags": ["telegram", "personas", "bots"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Define all 5 persona profiles", "done": true},
+      {"id": "sub_002", "title": "Save personas with system prompts", "done": true},
+      {"id": "sub_003", "title": "Store all 5 Telegram bot API keys", "done": true},
+      {"id": "sub_004", "title": "Launch 4 additional bot instances", "done": false},
+      {"id": "sub_005", "title": "Test each bot independently", "done": false}
+    ],
+    "dod": "All 5 bots running and responding independently in Telegram",
+    "comments": [
+      {"author": "Atlas", "text": "All 5 personas defined and saved with API keys", "timestamp": "2026-02-04T20:52:00-05:00"},
+      {"author": "Atlas", "text": "Hit infrastructure issues - Docker-in-Docker not working, systemd unavailable", "timestamp": "2026-02-04T20:30:00-05:00"},
+      {"author": "Atlas", "text": "Blocked: Need proper multi-instance setup or different hosting approach", "timestamp": "2026-02-04T20:35:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_004",
+    "title": "API Key Funding & Configuration",
+    "description": "Fund and configure priority APIs: OpenRouter (cheap models), CRM (HubSpot/Salesforce), Accounting (QuickBooks/Xero), Google Calendar (OAuth), Bright Data (web scraping)",
+    "status": "backlog",
+    "priority": "high",
+    "createdAt": "2026-02-04T16:28:00-05:00",
+    "tags": ["apis", "funding", "configuration"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Fund OpenRouter account", "done": false},
+      {"id": "sub_002", "title": "Configure CRM API (HubSpot or Salesforce)", "done": false},
+      {"id": "sub_003", "title": "Configure accounting API (QuickBooks or Xero)", "done": false},
+      {"id": "sub_004", "title": "Set up Google Calendar OAuth", "done": false},
+      {"id": "sub_005", "title": "Set up Bright Data for web scraping", "done": false}
+    ],
+    "dod": "All priority APIs funded, configured, and tested",
+    "comments": []
+  },
+  {
+    "id": "task_005",
+    "title": "Token Optimization - Google Doc Implementation",
+    "description": "Implement 97% cost reduction strategy from Google Doc. Switch to Haiku for routine tasks, enable prompt caching, optimize session management.",
+    "status": "in_progress",
+    "priority": "medium",
+    "createdAt": "2026-02-04T16:28:00-05:00",
+    "tags": ["optimization", "cost-reduction"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Session initialization rules", "done": true},
+      {"id": "sub_002", "title": "Rate limiting implementation", "done": true},
+      {"id": "sub_003", "title": "Workspace file optimization", "done": true},
+      {"id": "sub_004", "title": "Ollama local models setup", "done": true},
+      {"id": "sub_005", "title": "Model routing to Haiku", "done": false},
+      {"id": "sub_006", "title": "Prompt caching configuration", "done": false}
+    ],
+    "dod": "Cost reduced from $1,500/mo to $30-50/mo while maintaining quality",
+    "comments": [
+      {"author": "Atlas", "text": "67% complete - 4 of 6 parts done", "timestamp": "2026-02-04T16:28:00-05:00"},
+      {"author": "Atlas", "text": "Blocked by API funding - need OpenRouter funded before switching models", "timestamp": "2026-02-04T16:28:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_006",
+    "title": "HVAC Platform Project",
+    "description": "Build HVAC platform with 105 installed skills ready. Waiting for direction on specific features and requirements.",
+    "status": "backlog",
+    "priority": "medium",
+    "createdAt": "2026-02-04T16:28:00-05:00",
+    "tags": ["hvac", "platform", "project"],
+    "subtasks": [],
+    "dod": "Platform specification defined and development started",
+    "comments": [
+      {"author": "Atlas", "text": "105 skills installed - ready to build", "timestamp": "2026-02-04T19:47:00-05:00"},
+      {"author": "Atlas", "text": "Waiting for direction on specific features", "timestamp": "2026-02-04T16:28:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_007",
+    "title": "Skills Installation - Executive & Development Stacks",
+    "description": "Install comprehensive skill sets for HVAC executive work and full-stack development. Target: CRM, finance, communication, React, Next.js, databases, deployment.",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-04T14:00:00-05:00",
+    "completedAt": "2026-02-04T19:47:00-05:00",
+    "tags": ["skills", "installation", "setup"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Install HVAC Executive Suite (32 skills)", "done": true},
+      {"id": "sub_002", "title": "Install Development Stack (26 skills)", "done": true},
+      {"id": "sub_003", "title": "Document installed skills", "done": true},
+      {"id": "sub_004", "title": "Create capability guides", "done": true}
+    ],
+    "dod": "105 skills installed, documented, and ready for production use",
+    "comments": [
+      {"author": "Atlas", "text": "✅ 58 unique skills installed successfully", "timestamp": "2026-02-04T19:47:00-05:00"},
+      {"author": "Atlas", "text": "Created FINAL_SKILLS_STATUS.md and COMPLETE_DEVELOPMENT_STACK_GUIDE.md", "timestamp": "2026-02-04T19:47:00-05:00"}
+    ]
+  },
+  {
+    "id": "task_008",
+    "title": "Communication Protocol V1 Implementation",
+    "description": "Implement mandatory communication protocol for proactive updates, progress tracking, and completion signals.",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-04T12:00:00-05:00",
+    "completedAt": "2026-02-04T14:00:00-05:00",
+    "tags": ["protocol", "communication"],
+    "subtasks": [
+      {"id": "sub_001", "title": "Create COMMUNICATION_PROTOCOL_V1.md", "done": true},
+      {"id": "sub_002", "title": "Add to SOUL.md", "done": true},
+      {"id": "sub_003", "title": "Test with real tasks", "done": true}
+    ],
+    "dod": "Protocol active and enforced in all interactions",
+    "comments": [
+      {"author": "Atlas", "text": "✅ Protocol created and integrated into SOUL.md", "timestamp": "2026-02-04T14:00:00-05:00"}
+    ]
+  }
+]
