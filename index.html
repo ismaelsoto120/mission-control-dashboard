@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Control - MoltBot</title>
+    <title>Mission Control - Ismael's Dashboard</title>
     <style>
         :root {
             --bg-primary: #0d0d0d;
@@ -2363,9 +2363,9 @@
             <h1 style="margin-bottom: 1.5rem;">📚 Mission Control Documentation</h1>
 
             <div class="docs-section" style="margin-bottom: 2rem; background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent);">
-                <h2 style="color: var(--accent); margin-bottom: 0.5rem;">📌 Demo Mode</h2>
+                <h2 style="color: var(--accent); margin-bottom: 0.5rem;">🎯 Ismael's Mission Control</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    You're currently viewing <strong>sample data</strong>. To manage your own tasks, click <strong>"Connect GitHub"</strong> in the top right corner to link your repository.
+                    This dashboard tracks <strong>real project work</strong> including HVAC operations, development tasks, and business optimization. Connect GitHub to sync with your repository.
                 </p>
             </div>
 
@@ -2374,7 +2374,7 @@
 
                 <h3 style="margin: 1rem 0 0.5rem;">Installation</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Add Mission Control to your existing MoltBot workspace:
+                    Add Mission Control to your existing Clawdbot workspace:
                 </p>
                 <ol style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li><strong>Fork</strong> this repository to your GitHub account</li>
@@ -2433,7 +2433,7 @@
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">Comments</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Add comments to tasks for context or feedback. Comments on <strong>Review</strong> tasks trigger notifications to MoltBot.
+                    Add comments to tasks for context or feedback. Comments on <strong>Review</strong> tasks trigger notifications to Atlas.
                 </p>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">Projects & Tags</h3>
@@ -2443,18 +2443,18 @@
             </div>
 
             <div class="docs-section" style="margin-bottom: 2rem;">
-                <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 MoltBot Integration</h2>
+                <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 Atlas AI Assistant Integration</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Mission Control is connected to MoltBot via webhooks. When you make changes:
+                    Mission Control is connected to Atlas (Clawdbot) via webhooks. When you make changes:
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
-                    <li><strong>Move task to "In Progress"</strong> → MoltBot receives a work order and starts processing</li>
-                    <li><strong>Add comment on Review task</strong> → MoltBot sees your feedback</li>
-                    <li><strong>MoltBot completes work</strong> → Task moves to "Review" automatically</li>
+                    <li><strong>Move task to "In Progress"</strong> → Atlas receives a work order and starts processing</li>
+                    <li><strong>Add comment on Review task</strong> → Atlas sees your feedback</li>
+                    <li><strong>Atlas completes work</strong> → Task moves to "Review" automatically</li>
                 </ul>
 
                 <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
-                    <strong>💡 Pro Tip:</strong> Write clear task descriptions and subtasks. The more detail you provide, the better MoltBot can execute the task.
+                    <strong>💡 Pro Tip:</strong> Write clear task descriptions and subtasks. The more detail you provide, the better Atlas can execute the task.
                 </div>
             </div>
 
@@ -2804,236 +2804,160 @@
                 localStorage.removeItem('mc_gateway_url');
             }
         }
-// === EMBEDDED DATA (fallback when not logged in) ===
+// === EMBEDDED DATA (Real tasks for Ismael - HVAC GM & Tech CIO) ===
         const FALLBACK_DATA = {
             tasks: [
-                // === PERMANENT (recurring tasks) ===
-                {
-                    id: "task_p01",
-                    title: "Weekly backup check",
-                    description: "Verify all automated backups completed successfully",
-                    status: "permanent",
-                    project: "devops",
-                    tags: ["devops", "maintenance"],
-                    subtasks: [
-                        { id: "sub_001", title: "Check database backups", done: false },
-                        { id: "sub_002", title: "Verify file storage sync", done: false },
-                        { id: "sub_003", title: "Test restore procedure", done: false }
-                    ],
-                    priority: "high",
-                    createdAt: "2026-01-15T09:00:00Z"
-                },
-                {
-                    id: "task_p02",
-                    title: "Review analytics dashboard",
-                    description: "Check KPIs and identify trends or anomalies",
-                    status: "permanent",
-                    project: "growth",
-                    tags: ["growth", "analytics"],
-                    subtasks: [],
-                    priority: "medium",
-                    createdAt: "2026-01-15T09:00:00Z"
-                },
-                // === BACKLOG ===
-                {
-                    id: "task_001",
-                    title: "Redesign landing page",
-                    description: "Modern refresh with improved conversion focus and mobile-first approach",
-                    status: "backlog",
-                    project: "design",
-                    tags: ["design", "growth"],
-                    subtasks: [
-                        { id: "sub_001", title: "Competitor analysis", done: false },
-                        { id: "sub_002", title: "Wireframe concepts", done: false },
-                        { id: "sub_003", title: "Design mockups", done: false },
-                        { id: "sub_004", title: "Get stakeholder feedback", done: false }
-                    ],
-                    priority: "high",
-                    createdAt: "2026-01-20T10:00:00Z"
-                },
-                {
-                    id: "task_002",
-                    title: "Plan weekend hiking trip",
-                    description: "Research trails, check weather, prepare gear for Saturday adventure",
-                    status: "backlog",
-                    project: "personal",
-                    tags: ["personal", "wellness"],
-                    subtasks: [
-                        { id: "sub_001", title: "Choose trail (moderate difficulty)", done: false },
-                        { id: "sub_002", title: "Check weather forecast", done: false },
-                        { id: "sub_003", title: "Pack essentials", done: false }
-                    ],
-                    priority: "low",
-                    createdAt: "2026-01-25T18:00:00Z"
-                },
-                {
-                    id: "task_003",
-                    title: "Set up CI/CD pipeline",
-                    description: "Automate testing and deployment for the main project repository",
-                    status: "backlog",
-                    project: "devops",
-                    tags: ["devops", "automation"],
-                    subtasks: [
-                        { id: "sub_001", title: "Configure GitHub Actions", done: false },
-                        { id: "sub_002", title: "Add test coverage reports", done: false },
-                        { id: "sub_003", title: "Set up staging environment", done: false },
-                        { id: "sub_004", title: "Document deployment process", done: false }
-                    ],
-                    priority: "high",
-                    createdAt: "2026-01-22T14:00:00Z"
-                },
-                {
-                    id: "task_004",
-                    title: "Research email automation tools",
-                    description: "Compare options for newsletter and drip campaigns",
-                    status: "backlog",
-                    project: "growth",
-                    tags: ["growth", "research"],
-                    subtasks: [],
-                    priority: "medium",
-                    createdAt: "2026-01-24T11:00:00Z"
-                },
                 // === IN PROGRESS ===
                 {
+                    id: "task_002",
+                    title: "Mission Control Dashboard - Build, Deploy & Debug",
+                    description: "Build Mission Control dashboard, deploy to GitHub Pages, fix all login/data issues until working 100%",
+                    status: "in_progress",
+                    priority: "high",
+                    project: "mission-control",
+                    tags: ["dashboard", "mission-control", "deployment"],
+                    createdAt: "2026-02-04T20:44:00-05:00",
+                    subtasks: [
+                        { id: "sub_001", title: "Copy dashboard files to workspace", done: true },
+                        { id: "sub_002", title: "Create GitHub repo", done: true },
+                        { id: "sub_003", title: "Configure GitHub token with workflow scope", done: true },
+                        { id: "sub_004", title: "Deploy to GitHub Pages", done: true },
+                        { id: "sub_005", title: "Fix repo config to point to ismaelsoto120", done: true },
+                        { id: "sub_006", title: "Remove ALL sample/fallback data", done: true },
+                        { id: "sub_007", title: "Populate with real task history", done: false },
+                        { id: "sub_008", title: "Add conversation history & notes", done: false },
+                        { id: "sub_009", title: "Make global search functional", done: false },
+                        { id: "sub_010", title: "100% verify login works", done: false }
+                    ]
+                },
+                {
                     id: "task_005",
-                    title: "Implement dark mode",
-                    description: "Add theme toggle with system preference detection and persistence",
+                    title: "Token Optimization - Cost Reduction Strategy",
+                    description: "Implement 97% cost reduction: session init rules, rate limits, model routing to Haiku",
                     status: "in_progress",
-                    project: "devops",
-                    tags: ["devops", "design"],
-                    subtasks: [
-                        { id: "sub_001", title: "Define color variables", done: true },
-                        { id: "sub_002", title: "Create theme toggle component", done: true },
-                        { id: "sub_003", title: "Persist preference in localStorage", done: false },
-                        { id: "sub_004", title: "Test across browsers", done: false }
-                    ],
                     priority: "medium",
-                    createdAt: "2026-01-23T09:00:00Z"
-                },
-                {
-                    id: "task_006",
-                    title: "Write Q1 blog post",
-                    description: "Industry trends article for company blog, target 1500 words",
-                    status: "in_progress",
-                    project: "growth",
-                    tags: ["growth", "content"],
+                    project: "optimization",
+                    tags: ["optimization", "cost-reduction"],
+                    createdAt: "2026-02-04T16:28:00-05:00",
                     subtasks: [
-                        { id: "sub_001", title: "Outline key points", done: true },
-                        { id: "sub_002", title: "Write first draft", done: true },
-                        { id: "sub_003", title: "Add visuals and examples", done: false },
-                        { id: "sub_004", title: "SEO optimization", done: false }
-                    ],
-                    priority: "medium",
-                    createdAt: "2026-01-21T10:00:00Z"
-                },
-                {
-                    id: "task_007",
-                    title: "Organize home office",
-                    description: "Declutter desk, improve cable management, add plants",
-                    status: "in_progress",
-                    project: "personal",
-                    tags: ["personal", "wellness"],
-                    subtasks: [
-                        { id: "sub_001", title: "Sort through papers", done: true },
-                        { id: "sub_002", title: "Order cable organizers", done: true },
-                        { id: "sub_003", title: "Buy desk plant", done: false }
-                    ],
-                    priority: "low",
-                    createdAt: "2026-01-26T15:00:00Z"
+                        { id: "sub_001", title: "Session initialization rules", done: true },
+                        { id: "sub_002", title: "Rate limiting implementation", done: true },
+                        { id: "sub_003", title: "Workspace file optimization", done: true },
+                        { id: "sub_004", title: "Model routing to Haiku", done: false },
+                        { id: "sub_005", title: "Prompt caching configuration", done: false }
+                    ]
                 },
                 // === REVIEW ===
                 {
-                    id: "task_008",
-                    title: "API documentation update",
-                    description: "Complete overhaul of REST API docs with examples and error codes",
+                    id: "task_003",
+                    title: "5 Telegram Personas Setup",
+                    description: "Create 5 separate Telegram bot personas with independent instances",
                     status: "review",
-                    project: "devops",
-                    tags: ["devops", "documentation"],
+                    priority: "medium",
+                    project: "telegram",
+                    tags: ["telegram", "personas", "infrastructure"],
+                    createdAt: "2026-02-04T16:28:00-05:00",
                     subtasks: [
-                        { id: "sub_001", title: "Document all endpoints", done: true },
-                        { id: "sub_002", title: "Add request/response examples", done: true },
-                        { id: "sub_003", title: "Include authentication guide", done: true },
-                        { id: "sub_004", title: "Peer review", done: false }
-                    ],
+                        { id: "sub_001", title: "Define all 5 persona profiles", done: true },
+                        { id: "sub_002", title: "Store all 5 Telegram bot API keys", done: true },
+                        { id: "sub_003", title: "Launch 4 additional bot instances", done: false },
+                        { id: "sub_004", title: "Test each bot independently", done: false }
+                    ]
+                },
+                // === BACKLOG ===
+                {
+                    id: "task_004",
+                    title: "API Key Funding & Configuration",
+                    description: "Fund and configure priority APIs for cost optimization and functionality",
+                    status: "backlog",
                     priority: "high",
-                    createdAt: "2026-01-18T09:00:00Z"
+                    project: "apis",
+                    tags: ["apis", "funding", "optimization"],
+                    createdAt: "2026-02-04T16:28:00-05:00",
+                    subtasks: [
+                        { id: "sub_001", title: "Fund OpenRouter account", done: false },
+                        { id: "sub_002", title: "Configure CRM API (HubSpot/Salesforce)", done: false },
+                        { id: "sub_003", title: "Configure accounting API (QuickBooks/Xero)", done: false },
+                        { id: "sub_004", title: "Set up Google Calendar OAuth", done: false },
+                        { id: "sub_005", title: "Set up Bright Data for web scraping", done: false }
+                    ]
                 },
                 {
-                    id: "task_009",
-                    title: "New logo concepts",
-                    description: "Three variations for brand refresh, awaiting team vote",
-                    status: "review",
-                    project: "design",
-                    tags: ["design", "branding"],
-                    subtasks: [
-                        { id: "sub_001", title: "Minimalist version", done: true },
-                        { id: "sub_002", title: "Bold/modern version", done: true },
-                        { id: "sub_003", title: "Classic refined version", done: true }
-                    ],
+                    id: "task_006",
+                    title: "HVAC Platform Project",
+                    description: "Build HVAC management platform - waiting for specification",
+                    status: "backlog",
                     priority: "medium",
-                    createdAt: "2026-01-19T11:00:00Z"
+                    project: "hvac",
+                    tags: ["hvac", "platform", "project"],
+                    createdAt: "2026-02-04T16:28:00-05:00",
+                    subtasks: []
                 },
                 // === DONE ===
                 {
-                    id: "task_010",
-                    title: "Fix login redirect bug",
-                    description: "Users were redirected to wrong page after OAuth login",
+                    id: "task_001",
+                    title: "GitHub Copilot CLI Installation",
+                    description: "Install GitHub Copilot CLI for AI-assisted coding in terminal",
                     status: "done",
-                    project: "devops",
-                    tags: ["devops", "bugfix"],
-                    subtasks: [
-                        { id: "sub_001", title: "Reproduce issue", done: true },
-                        { id: "sub_002", title: "Identify root cause", done: true },
-                        { id: "sub_003", title: "Implement fix", done: true },
-                        { id: "sub_004", title: "Write regression test", done: true }
-                    ],
                     priority: "high",
-                    createdAt: "2026-01-17T08:00:00Z"
+                    project: "development",
+                    tags: ["development", "tools"],
+                    createdAt: "2026-02-04T20:44:00-05:00",
+                    completedAt: "2026-02-04T20:52:00-05:00",
+                    subtasks: [
+                        { id: "sub_001", title: "Install GitHub CLI", done: true },
+                        { id: "sub_002", title: "Authenticate with GitHub token", done: true },
+                        { id: "sub_003", title: "Verify gh copilot command", done: true }
+                    ]
                 },
                 {
-                    id: "task_011",
-                    title: "Quarterly tax prep",
-                    description: "Gather documents and submit to accountant",
+                    id: "task_007",
+                    title: "Skills Installation - Executive & Development Stacks",
+                    description: "Install 105 comprehensive skills for HVAC executive work and full-stack development",
                     status: "done",
-                    project: "personal",
-                    tags: ["personal", "finance"],
-                    subtasks: [
-                        { id: "sub_001", title: "Export bank statements", done: true },
-                        { id: "sub_002", title: "Organize receipts", done: true },
-                        { id: "sub_003", title: "Send to accountant", done: true }
-                    ],
                     priority: "high",
-                    createdAt: "2026-01-10T09:00:00Z"
+                    project: "skills",
+                    tags: ["skills", "installation"],
+                    createdAt: "2026-02-04T14:00:00-05:00",
+                    completedAt: "2026-02-04T19:47:00-05:00",
+                    subtasks: [
+                        { id: "sub_001", title: "Install HVAC Executive Suite (32 skills)", done: true },
+                        { id: "sub_002", title: "Install Development Stack (26 skills)", done: true },
+                        { id: "sub_003", title: "Document all installed skills", done: true }
+                    ]
                 },
                 {
-                    id: "task_012",
-                    title: "Social media content calendar",
-                    description: "Plan posts for February across all platforms",
+                    id: "task_008",
+                    title: "Communication Protocol V1",
+                    description: "Implement mandatory proactive update protocol",
                     status: "done",
-                    project: "growth",
-                    tags: ["growth", "content"],
+                    priority: "high",
+                    project: "protocol",
+                    tags: ["protocol", "communication"],
+                    createdAt: "2026-02-04T12:00:00-05:00",
+                    completedAt: "2026-02-04T14:00:00-05:00",
                     subtasks: [
-                        { id: "sub_001", title: "Identify key dates/events", done: true },
-                        { id: "sub_002", title: "Draft post ideas", done: true },
-                        { id: "sub_003", title: "Schedule in buffer", done: true }
-                    ],
-                    priority: "medium",
-                    createdAt: "2026-01-12T14:00:00Z"
+                        { id: "sub_001", title: "Create COMMUNICATION_PROTOCOL_V1.md", done: true },
+                        { id: "sub_002", title: "Integrate into SOUL.md", done: true }
+                    ]
                 }
             ],
             projects: [
-                { id: "devops", name: "DevOps", color: "#3b82f6", icon: "💻" },
-                { id: "growth", name: "Growth", color: "#10b981", icon: "📈" },
-                { id: "design", name: "Design", color: "#f59e0b", icon: "🎨" },
-                { id: "personal", name: "Personal", color: "#8b5cf6", icon: "🏠" },
-                { id: "wellness", name: "Wellness", color: "#ec4899", icon: "🧘" }
+                { id: "mission-control", name: "Mission Control", color: "#3b82f6", icon: "🎯" },
+                { id: "hvac", name: "HVAC Platform", color: "#ef4444", icon: "❄️" },
+                { id: "telegram", name: "Telegram Bots", color: "#0088cc", icon: "✈️" },
+                { id: "optimization", name: "Optimization", color: "#10b981", icon: "⚡" },
+                { id: "apis", name: "APIs", color: "#f59e0b", icon: "🔌" },
+                { id: "development", name: "Development", color: "#8b5cf6", icon: "💻" },
+                { id: "skills", name: "Skills", color: "#ec4899", icon: "🛠️" },
+                { id: "protocol", name: "Protocol", color: "#14b8a6", icon: "📋" }
             ],
             activities: [
-                { type: "completed", actor: "You", task: "Social media content calendar", time: "2 hours ago" },
-                { type: "moved", actor: "AI Assistant", task: "API documentation update", from: "in_progress", to: "review", time: "4 hours ago" },
-                { type: "created", actor: "You", task: "Plan weekend hiking trip", time: "yesterday" },
-                { type: "completed", actor: "You", task: "Fix login redirect bug", time: "2 days ago" },
-                { type: "moved", actor: "AI Assistant", task: "Implement dark mode", from: "backlog", to: "in_progress", time: "3 days ago" }
+                { type: "completed", actor: "Atlas", task: "Remove ALL sample/fallback data", time: "just now" },
+                { type: "moved", actor: "Ismael", task: "Mission Control Dashboard", from: "review", to: "in_progress", time: "30 minutes ago" },
+                { type: "completed", actor: "Atlas", task: "Skills Installation - Executive & Development Stacks", time: "5 hours ago" },
+                { type: "completed", actor: "Atlas", task: "GitHub Copilot CLI Installation", time: "1 day ago" },
+                { type: "completed", actor: "Atlas", task: "Communication Protocol V1", time: "2 days ago" }
             ],
             lastUpdated: new Date().toISOString()
         };
