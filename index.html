@@ -2805,14 +2805,239 @@
             }
         }
 // === EMBEDDED DATA (fallback when not logged in) ===
-        // === YOUR TASKS (No GitHub API needed) ===
         const FALLBACK_DATA = {
-            tasks: [{"id":"task_001","title":"GitHub Copilot CLI Installation","description":"Install GitHub Copilot CLI for AI-assisted coding in terminal","status":"done","priority":"high","createdAt":"2026-02-04T20:44:00-05:00","completedAt":"2026-02-05T21:11:00-05:00","tags":["development","tools"],"subtasks":[{"id":"sub_001","title":"Install GitHub CLI","done":true},{"id":"sub_002","title":"Authenticate with GitHub token","done":true},{"id":"sub_003","title":"Install Copilot extension","done":true}],"dod":"gh copilot command working and ready to use","comments":[{"author":"Atlas","text":"GitHub CLI installed successfully","timestamp":"2026-02-04T20:46:00-05:00"},{"author":"Atlas","text":"Authenticated with classic token (workflow scope)","timestamp":"2026-02-04T21:10:00-05:00"},{"author":"Atlas","text":"✅ Copilot available via gh copilot command","timestamp":"2026-02-04T21:11:00-05:00"}]},{"id":"task_002","title":"Mission Control Dashboard - Build & Deploy","description":"Build Mission Control dashboard exactly like YouTube video (https://www.youtube.com/watch?v=UpM2H83MJC8&t=549s). Kanban task board for AI workflow management.","status":"done","priority":"high","createdAt":"2026-02-04T20:44:00-05:00","completedAt":"2026-02-05T21:11:00-05:00","tags":["dashboard","mission-control","kanban"],"subtasks":[{"id":"sub_001","title":"Copy dashboard files to workspace","done":true},{"id":"sub_002","title":"Set up git repository","done":true},{"id":"sub_003","title":"Create GitHub repo","done":true},{"id":"sub_004","title":"Configure GitHub token with workflow scope","done":true},{"id":"sub_005","title":"Push to GitHub","done":true},{"id":"sub_006","title":"Enable GitHub Pages","done":true},{"id":"sub_007","title":"Populate with actual tasks","done":false}],"dod":"Dashboard live at https://ismaelsoto120.github.io/mission-control-dashboard/ with real task data","comments":[{"author":"Atlas","text":"Dashboard files copied from mission-control skill","timestamp":"2026-02-04T20:53:00-05:00"},{"author":"Atlas","text":"Hit token permission issues - needed workflow scope","timestamp":"2026-02-04T21:09:00-05:00"},{"author":"Atlas","text":"✅ Dashboard deployed and live!","timestamp":"2026-02-04T21:11:00-05:00"},{"author":"Ismael","text":"Populate with my pending tasks and activity","timestamp":"2026-02-04T21:13:00-05:00"}]},{"id":"task_003","title":"5 Telegram Personas Setup","description":"Create 5 separate Telegram bot personas: Atlas_Core (architecture), HVAC_GM_Bot (operations), MarketSignal_AI (markets), Sovereign_Assistant (personal), Digital_Architect_AI (digital products)","status":"review","priority":"high","createdAt":"2026-02-04T16:28:00-05:00","tags":["telegram","personas","bots"],"subtasks":[{"id":"sub_001","title":"Define all 5 persona profiles","done":true},{"id":"sub_002","title":"Save personas with system prompts","done":true},{"id":"sub_003","title":"Store all 5 Telegram bot API keys","done":true},{"id":"sub_004","title":"Launch 4 additional bot instances","done":false},{"id":"sub_005","title":"Test each bot independently","done":false}],"dod":"All 5 bots running and responding independently in Telegram","comments":[{"author":"Atlas","text":"All 5 personas defined and saved with API keys","timestamp":"2026-02-04T20:52:00-05:00"},{"author":"Atlas","text":"Hit infrastructure issues - Docker-in-Docker not working, systemd unavailable","timestamp":"2026-02-04T20:30:00-05:00"},{"author":"Atlas","text":"Blocked: Need proper multi-instance setup or different hosting approach","timestamp":"2026-02-04T20:35:00-05:00"}]},{"id":"task_004","title":"API Key Funding & Configuration","description":"Fund and configure priority APIs: OpenRouter (cheap models), CRM (HubSpot/Salesforce), Accounting (QuickBooks/Xero), Google Calendar (OAuth), Bright Data (web scraping)","status":"backlog","priority":"high","createdAt":"2026-02-04T16:28:00-05:00","tags":["apis","funding","configuration"],"subtasks":[{"id":"sub_001","title":"Fund OpenRouter account","done":false},{"id":"sub_002","title":"Configure CRM API (HubSpot or Salesforce)","done":false},{"id":"sub_003","title":"Configure accounting API (QuickBooks or Xero)","done":false},{"id":"sub_004","title":"Set up Google Calendar OAuth","done":false},{"id":"sub_005","title":"Set up Bright Data for web scraping","done":false}],"dod":"All priority APIs funded, configured, and tested","comments":[]},{"id":"task_005","title":"Token Optimization - Google Doc Implementation","description":"Implement 97% cost reduction strategy from Google Doc. Switch to Haiku for routine tasks, enable prompt caching, optimize session management.","status":"in_progress","priority":"medium","createdAt":"2026-02-04T16:28:00-05:00","tags":["optimization","cost-reduction"],"subtasks":[{"id":"sub_001","title":"Session initialization rules","done":true},{"id":"sub_002","title":"Rate limiting implementation","done":true},{"id":"sub_003","title":"Workspace file optimization","done":true},{"id":"sub_004","title":"Ollama local models setup","done":true},{"id":"sub_005","title":"Model routing to Haiku","done":false},{"id":"sub_006","title":"Prompt caching configuration","done":false}],"dod":"Cost reduced from $1,500/mo to $30-50/mo while maintaining quality","comments":[{"author":"Atlas","text":"67% complete - 4 of 6 parts done","timestamp":"2026-02-04T16:28:00-05:00"},{"author":"Atlas","text":"Blocked by API funding - need OpenRouter funded before switching models","timestamp":"2026-02-04T16:28:00-05:00"}]},{"id":"task_006","title":"HVAC Platform Project","description":"Build HVAC platform with 105 installed skills ready. Waiting for direction on specific features and requirements.","status":"backlog","priority":"medium","createdAt":"2026-02-04T16:28:00-05:00","tags":["hvac","platform","project"],"subtasks":[],"dod":"Platform specification defined and development started","comments":[{"author":"Atlas","text":"105 skills installed - ready to build","timestamp":"2026-02-04T19:47:00-05:00"},{"author":"Atlas","text":"Waiting for direction on specific features","timestamp":"2026-02-04T16:28:00-05:00"}]},{"id":"task_007","title":"Skills Installation - Executive & Development Stacks","description":"Install comprehensive skill sets for HVAC executive work and full-stack development. Target: CRM, finance, communication, React, Next.js, databases, deployment.","status":"done","priority":"high","createdAt":"2026-02-04T14:00:00-05:00","completedAt":"2026-02-04T19:47:00-05:00","tags":["skills","installation","setup"],"subtasks":[{"id":"sub_001","title":"Install HVAC Executive Suite (32 skills)","done":true},{"id":"sub_002","title":"Install Development Stack (26 skills)","done":true},{"id":"sub_003","title":"Document installed skills","done":true},{"id":"sub_004","title":"Create capability guides","done":true}],"dod":"105 skills installed, documented, and ready for production use","comments":[{"author":"Atlas","text":"✅ 58 unique skills installed successfully","timestamp":"2026-02-04T19:47:00-05:00"},{"author":"Atlas","text":"Created FINAL_SKILLS_STATUS.md and COMPLETE_DEVELOPMENT_STACK_GUIDE.md","timestamp":"2026-02-04T19:47:00-05:00"}]},{"id":"task_008","title":"Communication Protocol V1 Implementation","description":"Implement mandatory communication protocol for proactive updates, progress tracking, and completion signals.","status":"done","priority":"high","createdAt":"2026-02-04T12:00:00-05:00","completedAt":"2026-02-04T14:00:00-05:00","tags":["protocol","communication"],"subtasks":[{"id":"sub_001","title":"Create COMMUNICATION_PROTOCOL_V1.md","done":true},{"id":"sub_002","title":"Add to SOUL.md","done":true},{"id":"sub_003","title":"Test with real tasks","done":true}],"dod":"Protocol active and enforced in all interactions","comments":[{"author":"Atlas","text":"✅ Protocol created and integrated into SOUL.md","timestamp":"2026-02-04T14:00:00-05:00"}]}],
-            projects: [],
-            activities: [],
+            tasks: [
+                // === PERMANENT (recurring tasks) ===
+                {
+                    id: "task_p01",
+                    title: "Weekly backup check",
+                    description: "Verify all automated backups completed successfully",
+                    status: "permanent",
+                    project: "devops",
+                    tags: ["devops", "maintenance"],
+                    subtasks: [
+                        { id: "sub_001", title: "Check database backups", done: false },
+                        { id: "sub_002", title: "Verify file storage sync", done: false },
+                        { id: "sub_003", title: "Test restore procedure", done: false }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-15T09:00:00Z"
+                },
+                {
+                    id: "task_p02",
+                    title: "Review analytics dashboard",
+                    description: "Check KPIs and identify trends or anomalies",
+                    status: "permanent",
+                    project: "growth",
+                    tags: ["growth", "analytics"],
+                    subtasks: [],
+                    priority: "medium",
+                    createdAt: "2026-01-15T09:00:00Z"
+                },
+                // === BACKLOG ===
+                {
+                    id: "task_001",
+                    title: "Redesign landing page",
+                    description: "Modern refresh with improved conversion focus and mobile-first approach",
+                    status: "backlog",
+                    project: "design",
+                    tags: ["design", "growth"],
+                    subtasks: [
+                        { id: "sub_001", title: "Competitor analysis", done: false },
+                        { id: "sub_002", title: "Wireframe concepts", done: false },
+                        { id: "sub_003", title: "Design mockups", done: false },
+                        { id: "sub_004", title: "Get stakeholder feedback", done: false }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-20T10:00:00Z"
+                },
+                {
+                    id: "task_002",
+                    title: "Plan weekend hiking trip",
+                    description: "Research trails, check weather, prepare gear for Saturday adventure",
+                    status: "backlog",
+                    project: "personal",
+                    tags: ["personal", "wellness"],
+                    subtasks: [
+                        { id: "sub_001", title: "Choose trail (moderate difficulty)", done: false },
+                        { id: "sub_002", title: "Check weather forecast", done: false },
+                        { id: "sub_003", title: "Pack essentials", done: false }
+                    ],
+                    priority: "low",
+                    createdAt: "2026-01-25T18:00:00Z"
+                },
+                {
+                    id: "task_003",
+                    title: "Set up CI/CD pipeline",
+                    description: "Automate testing and deployment for the main project repository",
+                    status: "backlog",
+                    project: "devops",
+                    tags: ["devops", "automation"],
+                    subtasks: [
+                        { id: "sub_001", title: "Configure GitHub Actions", done: false },
+                        { id: "sub_002", title: "Add test coverage reports", done: false },
+                        { id: "sub_003", title: "Set up staging environment", done: false },
+                        { id: "sub_004", title: "Document deployment process", done: false }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-22T14:00:00Z"
+                },
+                {
+                    id: "task_004",
+                    title: "Research email automation tools",
+                    description: "Compare options for newsletter and drip campaigns",
+                    status: "backlog",
+                    project: "growth",
+                    tags: ["growth", "research"],
+                    subtasks: [],
+                    priority: "medium",
+                    createdAt: "2026-01-24T11:00:00Z"
+                },
+                // === IN PROGRESS ===
+                {
+                    id: "task_005",
+                    title: "Implement dark mode",
+                    description: "Add theme toggle with system preference detection and persistence",
+                    status: "in_progress",
+                    project: "devops",
+                    tags: ["devops", "design"],
+                    subtasks: [
+                        { id: "sub_001", title: "Define color variables", done: true },
+                        { id: "sub_002", title: "Create theme toggle component", done: true },
+                        { id: "sub_003", title: "Persist preference in localStorage", done: false },
+                        { id: "sub_004", title: "Test across browsers", done: false }
+                    ],
+                    priority: "medium",
+                    createdAt: "2026-01-23T09:00:00Z"
+                },
+                {
+                    id: "task_006",
+                    title: "Write Q1 blog post",
+                    description: "Industry trends article for company blog, target 1500 words",
+                    status: "in_progress",
+                    project: "growth",
+                    tags: ["growth", "content"],
+                    subtasks: [
+                        { id: "sub_001", title: "Outline key points", done: true },
+                        { id: "sub_002", title: "Write first draft", done: true },
+                        { id: "sub_003", title: "Add visuals and examples", done: false },
+                        { id: "sub_004", title: "SEO optimization", done: false }
+                    ],
+                    priority: "medium",
+                    createdAt: "2026-01-21T10:00:00Z"
+                },
+                {
+                    id: "task_007",
+                    title: "Organize home office",
+                    description: "Declutter desk, improve cable management, add plants",
+                    status: "in_progress",
+                    project: "personal",
+                    tags: ["personal", "wellness"],
+                    subtasks: [
+                        { id: "sub_001", title: "Sort through papers", done: true },
+                        { id: "sub_002", title: "Order cable organizers", done: true },
+                        { id: "sub_003", title: "Buy desk plant", done: false }
+                    ],
+                    priority: "low",
+                    createdAt: "2026-01-26T15:00:00Z"
+                },
+                // === REVIEW ===
+                {
+                    id: "task_008",
+                    title: "API documentation update",
+                    description: "Complete overhaul of REST API docs with examples and error codes",
+                    status: "review",
+                    project: "devops",
+                    tags: ["devops", "documentation"],
+                    subtasks: [
+                        { id: "sub_001", title: "Document all endpoints", done: true },
+                        { id: "sub_002", title: "Add request/response examples", done: true },
+                        { id: "sub_003", title: "Include authentication guide", done: true },
+                        { id: "sub_004", title: "Peer review", done: false }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-18T09:00:00Z"
+                },
+                {
+                    id: "task_009",
+                    title: "New logo concepts",
+                    description: "Three variations for brand refresh, awaiting team vote",
+                    status: "review",
+                    project: "design",
+                    tags: ["design", "branding"],
+                    subtasks: [
+                        { id: "sub_001", title: "Minimalist version", done: true },
+                        { id: "sub_002", title: "Bold/modern version", done: true },
+                        { id: "sub_003", title: "Classic refined version", done: true }
+                    ],
+                    priority: "medium",
+                    createdAt: "2026-01-19T11:00:00Z"
+                },
+                // === DONE ===
+                {
+                    id: "task_010",
+                    title: "Fix login redirect bug",
+                    description: "Users were redirected to wrong page after OAuth login",
+                    status: "done",
+                    project: "devops",
+                    tags: ["devops", "bugfix"],
+                    subtasks: [
+                        { id: "sub_001", title: "Reproduce issue", done: true },
+                        { id: "sub_002", title: "Identify root cause", done: true },
+                        { id: "sub_003", title: "Implement fix", done: true },
+                        { id: "sub_004", title: "Write regression test", done: true }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-17T08:00:00Z"
+                },
+                {
+                    id: "task_011",
+                    title: "Quarterly tax prep",
+                    description: "Gather documents and submit to accountant",
+                    status: "done",
+                    project: "personal",
+                    tags: ["personal", "finance"],
+                    subtasks: [
+                        { id: "sub_001", title: "Export bank statements", done: true },
+                        { id: "sub_002", title: "Organize receipts", done: true },
+                        { id: "sub_003", title: "Send to accountant", done: true }
+                    ],
+                    priority: "high",
+                    createdAt: "2026-01-10T09:00:00Z"
+                },
+                {
+                    id: "task_012",
+                    title: "Social media content calendar",
+                    description: "Plan posts for February across all platforms",
+                    status: "done",
+                    project: "growth",
+                    tags: ["growth", "content"],
+                    subtasks: [
+                        { id: "sub_001", title: "Identify key dates/events", done: true },
+                        { id: "sub_002", title: "Draft post ideas", done: true },
+                        { id: "sub_003", title: "Schedule in buffer", done: true }
+                    ],
+                    priority: "medium",
+                    createdAt: "2026-01-12T14:00:00Z"
+                }
+            ],
+            projects: [
+                { id: "devops", name: "DevOps", color: "#3b82f6", icon: "💻" },
+                { id: "growth", name: "Growth", color: "#10b981", icon: "📈" },
+                { id: "design", name: "Design", color: "#f59e0b", icon: "🎨" },
+                { id: "personal", name: "Personal", color: "#8b5cf6", icon: "🏠" },
+                { id: "wellness", name: "Wellness", color: "#ec4899", icon: "🧘" }
+            ],
+            activities: [
+                { type: "completed", actor: "You", task: "Social media content calendar", time: "2 hours ago" },
+                { type: "moved", actor: "AI Assistant", task: "API documentation update", from: "in_progress", to: "review", time: "4 hours ago" },
+                { type: "created", actor: "You", task: "Plan weekend hiking trip", time: "yesterday" },
+                { type: "completed", actor: "You", task: "Fix login redirect bug", time: "2 days ago" },
+                { type: "moved", actor: "AI Assistant", task: "Implement dark mode", from: "backlog", to: "in_progress", time: "3 days ago" }
+            ],
             lastUpdated: new Date().toISOString()
         };
-        };        async function loadTasksFromGitHub() {
+        async function loadTasksFromGitHub() {
             if (!STATE.token) {
                 console.log('No token, using fallback data');
                 STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
@@ -3082,29 +3307,60 @@
             document.getElementById('validation-loading').classList.add('visible');
             document.getElementById('btn-save-token').disabled = true;
 
-            // SKIP VALIDATION - Just accept the token and load data
-            console.log('Accepting token and loading data...');
-            
-            const user = { login: 'ismaelsoto120', avatar_url: '', name: 'Ismael' };
-            
-            document.getElementById('validation-loading').classList.remove('visible');
-            document.getElementById('validation-success').classList.add('visible');
-            document.getElementById('validated-user').textContent = user.login;
+            try {
+                // Validate token by fetching user info
+                const response = await fetch('https://api.github.com/user', {
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
 
-            // Save to localStorage
-            localStorage.setItem('gh_token', token);
-            localStorage.setItem('github_token', token);
+                if (!response.ok) {
+                    throw new Error('Invalid token');
+                }
 
-            STATE.token = token;
-            STATE.user = user;
-            STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
+                const user = await response.json();
 
-            // Update UI and load data
-            setTimeout(() => {
-                hideAuthModal();
-                showDashboard();
-                renderAll();
-            }, 1000);
+                // Check repo access
+                const repoResponse = await fetch(`https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}`, {
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (!repoResponse.ok) {
+                    throw new Error('No access to repository. Make sure you have "repo" scope.');
+                }
+
+                // Success!
+                document.getElementById('validation-loading').classList.remove('visible');
+                document.getElementById('validation-success').classList.add('visible');
+                document.getElementById('validated-user').textContent = user.login;
+
+                // Save to localStorage
+                localStorage.setItem('github_token', token);
+                localStorage.setItem('github_user', JSON.stringify({
+                    login: user.login,
+                    avatar_url: user.avatar_url,
+                    name: user.name || user.login
+                }));
+
+                STATE.token = token;
+                STATE.user = user;
+
+                // Update UI and load data
+                setTimeout(async () => {
+                    hideAuthModal();
+                    updateAuthUI();
+                    await loadTasksFromGitHub();
+                    await loadCronsFromGitHub();
+                }, 1000);
+
+            } catch (error) {
+                showValidationError(error.message);
+            }
         }
 
         function showValidationError(message) {
@@ -6620,22 +6876,46 @@
     <script>
         // === LOGIN/AUTH GATE ===
         async function checkAuth() {
-            // Check for saved token
-            let token = localStorage.getItem('gh_token') || localStorage.getItem('github_token');
-            
-            if (token) {
-                console.log('Found saved token, logging in...');
-                STATE.token = token;
-                STATE.user = { login: 'ismaelsoto120', avatar_url: '' };
-                showDashboard();
-                // Load from fallback data (your inline tasks)
-                STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
-                renderAll();
+            // Check both old and new token keys, migrate if needed
+            let token = localStorage.getItem('gh_token');
+            if (!token) {
+                const oldToken = localStorage.getItem('github_token');
+                if (oldToken) {
+                    // Migrate old token to new key
+                    localStorage.setItem('gh_token', oldToken);
+                    localStorage.removeItem('github_token');
+                    localStorage.removeItem('github_user'); // Clean up old user data
+                    token = oldToken;
+                    console.log('Migrated token from github_token to gh_token');
+                }
+            }
+
+            if (!token) {
+                showLoginScreen();
                 return;
             }
-            
-            // No token - show login
-            showLoginScreen();
+
+            // Validate token
+            try {
+                const response = await fetch('https://api.github.com/user', {
+                    headers: { 'Authorization': `token ${token}` }
+                });
+
+                if (response.ok) {
+                    const user = await response.json();
+                    STATE.token = token;
+                    STATE.user = user;
+                    showDashboard();
+                    await loadTasksFromGitHub();
+                    await loadCronsFromGitHub(); // Load data after auth
+                } else {
+                    localStorage.removeItem('gh_token');
+                    showLoginScreen();
+                }
+            } catch (e) {
+                console.error('Auth check failed:', e);
+                showLoginScreen();
+            }
         }
 
         function showLoginScreen() {
