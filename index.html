@@ -1752,7 +1752,7 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(135deg, var(--bg-primary) 0%, #1a1a2e 100%);
-            display: none; /* HIDDEN BY DEFAULT */
+            display: flex;
             justify-content: center;
             align-items: center;
             z-index: 9999;
@@ -6651,12 +6651,22 @@
     <script>
         // === LOGIN/AUTH GATE ===
         async function checkAuth() {
-            // SKIP LOGIN - Load data directly
-            console.log('Loading data directly from inline fallback');
-            STATE.user = { login: 'ismaelsoto120', avatar_url: '' };
-            STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
-            showDashboard();
-            renderAll();
+            // Check for saved token
+            let token = localStorage.getItem('gh_token') || localStorage.getItem('github_token');
+            
+            if (token) {
+                console.log('Found saved token, logging in...');
+                STATE.token = token;
+                STATE.user = { login: 'ismaelsoto120', avatar_url: '' };
+                showDashboard();
+                // Load from fallback data (your inline tasks)
+                STATE.data = JSON.parse(JSON.stringify(FALLBACK_DATA));
+                renderAll();
+                return;
+            }
+            
+            // No token - show login
+            showLoginScreen();
         }
 
         function showLoginScreen() {
