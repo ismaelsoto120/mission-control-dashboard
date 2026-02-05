@@ -6,90 +6,75 @@
     "status": "done",
     "priority": "high",
     "createdAt": "2026-02-04T20:44:00-05:00",
-    "completedAt": "2026-02-05T21:11:00-05:00",
+    "completedAt": "2026-02-04T20:52:00-05:00",
     "tags": ["development", "tools"],
     "subtasks": [
       {"id": "sub_001", "title": "Install GitHub CLI", "done": true},
       {"id": "sub_002", "title": "Authenticate with GitHub token", "done": true},
-      {"id": "sub_003", "title": "Install Copilot extension", "done": true}
+      {"id": "sub_003", "title": "Verify gh copilot command", "done": true}
     ],
-    "dod": "gh copilot command working and ready to use",
-    "comments": [
-      {"author": "Atlas", "text": "GitHub CLI installed successfully", "timestamp": "2026-02-04T20:46:00-05:00"},
-      {"author": "Atlas", "text": "Authenticated with classic token (workflow scope)", "timestamp": "2026-02-04T21:10:00-05:00"},
-      {"author": "Atlas", "text": "✅ Copilot available via gh copilot command", "timestamp": "2026-02-04T21:11:00-05:00"}
-    ]
+    "dod": "gh copilot command working and ready to use"
   },
   {
     "id": "task_002",
-    "title": "Mission Control Dashboard - Build & Deploy",
-    "description": "Build Mission Control dashboard exactly like YouTube video (https://www.youtube.com/watch?v=UpM2H83MJC8&t=549s). Kanban task board for AI workflow management.",
-    "status": "done",
+    "title": "Mission Control Dashboard - Build, Deploy & Debug",
+    "description": "Build Mission Control dashboard, deploy to GitHub Pages, fix all login/data issues until working 100%",
+    "status": "in_progress",
     "priority": "high",
     "createdAt": "2026-02-04T20:44:00-05:00",
-    "completedAt": "2026-02-05T21:11:00-05:00",
-    "tags": ["dashboard", "mission-control", "kanban"],
+    "tags": ["dashboard", "mission-control", "deployment"],
     "subtasks": [
       {"id": "sub_001", "title": "Copy dashboard files to workspace", "done": true},
-      {"id": "sub_002", "title": "Set up git repository", "done": true},
-      {"id": "sub_003", "title": "Create GitHub repo", "done": true},
-      {"id": "sub_004", "title": "Configure GitHub token with workflow scope", "done": true},
-      {"id": "sub_005", "title": "Push to GitHub", "done": true},
-      {"id": "sub_006", "title": "Enable GitHub Pages", "done": true},
-      {"id": "sub_007", "title": "Populate with actual tasks", "done": false}
+      {"id": "sub_002", "title": "Create GitHub repo", "done": true},
+      {"id": "sub_003", "title": "Configure GitHub token with workflow scope", "done": true},
+      {"id": "sub_004", "title": "Deploy to GitHub Pages", "done": true},
+      {"id": "sub_005", "title": "Fix repo config to point to ismaelsoto120", "done": true},
+      {"id": "sub_006", "title": "Remove ALL sample/fallback data", "done": false},
+      {"id": "sub_007", "title": "Populate with real task history", "done": false},
+      {"id": "sub_008", "title": "Add conversation history & notes", "done": false},
+      {"id": "sub_009", "title": "Make global search functional", "done": false},
+      {"id": "sub_010", "title": "100% verify login works", "done": false}
     ],
-    "dod": "Dashboard live at https://ismaelsoto120.github.io/mission-control-dashboard/ with real task data",
-    "comments": [
-      {"author": "Atlas", "text": "Dashboard files copied from mission-control skill", "timestamp": "2026-02-04T20:53:00-05:00"},
-      {"author": "Atlas", "text": "Hit token permission issues - needed workflow scope", "timestamp": "2026-02-04T21:09:00-05:00"},
-      {"author": "Atlas", "text": "✅ Dashboard deployed and live!", "timestamp": "2026-02-04T21:11:00-05:00"},
-      {"author": "Ismael", "text": "Populate with my pending tasks and activity", "timestamp": "2026-02-04T21:13:00-05:00"}
-    ]
+    "dod": "Dashboard shows ONLY Ismael's real data, login works, search works, complete history visible"
   },
   {
     "id": "task_003",
     "title": "5 Telegram Personas Setup",
-    "description": "Create 5 separate Telegram bot personas: Atlas_Core (architecture), HVAC_GM_Bot (operations), MarketSignal_AI (markets), Sovereign_Assistant (personal), Digital_Architect_AI (digital products)",
+    "description": "Create 5 separate Telegram bot personas with independent instances",
     "status": "review",
-    "priority": "high",
+    "priority": "medium",
     "createdAt": "2026-02-04T16:28:00-05:00",
-    "tags": ["telegram", "personas", "bots"],
+    "tags": ["telegram", "personas", "infrastructure"],
     "subtasks": [
       {"id": "sub_001", "title": "Define all 5 persona profiles", "done": true},
-      {"id": "sub_002", "title": "Save personas with system prompts", "done": true},
-      {"id": "sub_003", "title": "Store all 5 Telegram bot API keys", "done": true},
-      {"id": "sub_004", "title": "Launch 4 additional bot instances", "done": false},
-      {"id": "sub_005", "title": "Test each bot independently", "done": false}
+      {"id": "sub_002", "title": "Store all 5 Telegram bot API keys", "done": true},
+      {"id": "sub_003", "title": "Launch 4 additional bot instances", "done": false},
+      {"id": "sub_004", "title": "Test each bot independently", "done": false}
     ],
     "dod": "All 5 bots running and responding independently in Telegram",
-    "comments": [
-      {"author": "Atlas", "text": "All 5 personas defined and saved with API keys", "timestamp": "2026-02-04T20:52:00-05:00"},
-      {"author": "Atlas", "text": "Hit infrastructure issues - Docker-in-Docker not working, systemd unavailable", "timestamp": "2026-02-04T20:30:00-05:00"},
-      {"author": "Atlas", "text": "Blocked: Need proper multi-instance setup or different hosting approach", "timestamp": "2026-02-04T20:35:00-05:00"}
-    ]
+    "blockedBy": "Infrastructure issues - Docker-in-Docker not available, systemd unavailable"
   },
   {
     "id": "task_004",
     "title": "API Key Funding & Configuration",
-    "description": "Fund and configure priority APIs: OpenRouter (cheap models), CRM (HubSpot/Salesforce), Accounting (QuickBooks/Xero), Google Calendar (OAuth), Bright Data (web scraping)",
+    "description": "Fund and configure priority APIs for cost optimization and functionality",
     "status": "backlog",
     "priority": "high",
     "createdAt": "2026-02-04T16:28:00-05:00",
-    "tags": ["apis", "funding", "configuration"],
+    "tags": ["apis", "funding", "optimization"],
     "subtasks": [
       {"id": "sub_001", "title": "Fund OpenRouter account", "done": false},
-      {"id": "sub_002", "title": "Configure CRM API (HubSpot or Salesforce)", "done": false},
-      {"id": "sub_003", "title": "Configure accounting API (QuickBooks or Xero)", "done": false},
+      {"id": "sub_002", "title": "Configure CRM API (HubSpot/Salesforce)", "done": false},
+      {"id": "sub_003", "title": "Configure accounting API (QuickBooks/Xero)", "done": false},
       {"id": "sub_004", "title": "Set up Google Calendar OAuth", "done": false},
       {"id": "sub_005", "title": "Set up Bright Data for web scraping", "done": false}
     ],
-    "dod": "All priority APIs funded, configured, and tested",
-    "comments": []
+    "dod": "All priority APIs funded, configured, and tested"
   },
   {
     "id": "task_005",
-    "title": "Token Optimization - Google Doc Implementation",
-    "description": "Implement 97% cost reduction strategy from Google Doc. Switch to Haiku for routine tasks, enable prompt caching, optimize session management.",
+    "title": "Token Optimization - Cost Reduction Strategy",
+    "description": "Implement 97% cost reduction: session init rules, rate limits, model routing to Haiku",
     "status": "in_progress",
     "priority": "medium",
     "createdAt": "2026-02-04T16:28:00-05:00",
@@ -98,56 +83,43 @@
       {"id": "sub_001", "title": "Session initialization rules", "done": true},
       {"id": "sub_002", "title": "Rate limiting implementation", "done": true},
       {"id": "sub_003", "title": "Workspace file optimization", "done": true},
-      {"id": "sub_004", "title": "Ollama local models setup", "done": true},
-      {"id": "sub_005", "title": "Model routing to Haiku", "done": false},
-      {"id": "sub_006", "title": "Prompt caching configuration", "done": false}
+      {"id": "sub_004", "title": "Model routing to Haiku", "done": false},
+      {"id": "sub_005", "title": "Prompt caching configuration", "done": false}
     ],
-    "dod": "Cost reduced from $1,500/mo to $30-50/mo while maintaining quality",
-    "comments": [
-      {"author": "Atlas", "text": "67% complete - 4 of 6 parts done", "timestamp": "2026-02-04T16:28:00-05:00"},
-      {"author": "Atlas", "text": "Blocked by API funding - need OpenRouter funded before switching models", "timestamp": "2026-02-04T16:28:00-05:00"}
-    ]
+    "dod": "Cost reduced from $1,500/mo to $30-50/mo",
+    "blockedBy": "Need OpenRouter funding to switch models"
   },
   {
     "id": "task_006",
     "title": "HVAC Platform Project",
-    "description": "Build HVAC platform with 105 installed skills ready. Waiting for direction on specific features and requirements.",
+    "description": "Build HVAC management platform - waiting for specification",
     "status": "backlog",
     "priority": "medium",
     "createdAt": "2026-02-04T16:28:00-05:00",
     "tags": ["hvac", "platform", "project"],
     "subtasks": [],
-    "dod": "Platform specification defined and development started",
-    "comments": [
-      {"author": "Atlas", "text": "105 skills installed - ready to build", "timestamp": "2026-02-04T19:47:00-05:00"},
-      {"author": "Atlas", "text": "Waiting for direction on specific features", "timestamp": "2026-02-04T16:28:00-05:00"}
-    ]
+    "dod": "Platform specification defined and development started"
   },
   {
     "id": "task_007",
     "title": "Skills Installation - Executive & Development Stacks",
-    "description": "Install comprehensive skill sets for HVAC executive work and full-stack development. Target: CRM, finance, communication, React, Next.js, databases, deployment.",
+    "description": "Install 105 comprehensive skills for HVAC executive work and full-stack development",
     "status": "done",
     "priority": "high",
     "createdAt": "2026-02-04T14:00:00-05:00",
     "completedAt": "2026-02-04T19:47:00-05:00",
-    "tags": ["skills", "installation", "setup"],
+    "tags": ["skills", "installation"],
     "subtasks": [
       {"id": "sub_001", "title": "Install HVAC Executive Suite (32 skills)", "done": true},
       {"id": "sub_002", "title": "Install Development Stack (26 skills)", "done": true},
-      {"id": "sub_003", "title": "Document installed skills", "done": true},
-      {"id": "sub_004", "title": "Create capability guides", "done": true}
+      {"id": "sub_003", "title": "Document all installed skills", "done": true}
     ],
-    "dod": "105 skills installed, documented, and ready for production use",
-    "comments": [
-      {"author": "Atlas", "text": "✅ 58 unique skills installed successfully", "timestamp": "2026-02-04T19:47:00-05:00"},
-      {"author": "Atlas", "text": "Created FINAL_SKILLS_STATUS.md and COMPLETE_DEVELOPMENT_STACK_GUIDE.md", "timestamp": "2026-02-04T19:47:00-05:00"}
-    ]
+    "dod": "105 skills installed and documented"
   },
   {
     "id": "task_008",
-    "title": "Communication Protocol V1 Implementation",
-    "description": "Implement mandatory communication protocol for proactive updates, progress tracking, and completion signals.",
+    "title": "Communication Protocol V1",
+    "description": "Implement mandatory proactive update protocol",
     "status": "done",
     "priority": "high",
     "createdAt": "2026-02-04T12:00:00-05:00",
@@ -155,12 +127,8 @@
     "tags": ["protocol", "communication"],
     "subtasks": [
       {"id": "sub_001", "title": "Create COMMUNICATION_PROTOCOL_V1.md", "done": true},
-      {"id": "sub_002", "title": "Add to SOUL.md", "done": true},
-      {"id": "sub_003", "title": "Test with real tasks", "done": true}
+      {"id": "sub_002", "title": "Integrate into SOUL.md", "done": true}
     ],
-    "dod": "Protocol active and enforced in all interactions",
-    "comments": [
-      {"author": "Atlas", "text": "✅ Protocol created and integrated into SOUL.md", "timestamp": "2026-02-04T14:00:00-05:00"}
-    ]
+    "dod": "Protocol enforced in all interactions"
   }
 ]
